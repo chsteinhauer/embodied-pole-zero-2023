@@ -1,0 +1,37 @@
+{
+  "name": "music-visualizer",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "setup": "pip install -r ./python-server/requirements.txt",
+    "server": "nodemon -e py --exec python ./python-server/server.py",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chsteinhauer/music-visualizer.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/chsteinhauer/music-visualizer/issues"
+  },
+  "homepage": "https://github.com/chsteinhauer/music-visualizer#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "vite": "^4.2.1"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "4.4.0",
+    "@mediapipe/hands": "0.4.1675469240",
+    "@mediapipe/camera_utils": "0.3.1675466862",
+    "p5js-wrapper": "^1.2.3",
+    "sass": "^1.62.0",
+    "mathjs": "11.8.0",
+    "algebrite": "1.4.0"
+  }
+}
